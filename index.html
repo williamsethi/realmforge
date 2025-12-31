@@ -9,138 +9,122 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
 <header class="topbar">
   <div class="container topbar-inner">
     <a class="brand" href="index.html" aria-label="Realm Forge home">
-      <img src="./assets/svg/logo.svg" alt="Realm Forge logo"/>
+      <picture>
+  <source srcset="./assets/img/logo.webp 1x, ./assets/img/logo@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/logo.png" srcset="./assets/img/logo.png 1x, ./assets/img/logo@2x.png 2x" alt="Realm Forge logo">
+</picture>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="games.html">Current Games</a>
-<a href="reviews.html">Reviews</a>
-<a href="videos.html">Videos</a>
-    </nav>
+      <a class="navicon" href="index.html" aria-label="Home">
+  <picture>
+    <source srcset="./assets/img/nav-home.webp 1x, ./assets/img/nav-home@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-home.png" srcset="./assets/img/nav-home.png 1x, ./assets/img/nav-home@2x.png 2x" alt="Home">
+  </picture>
+</a>
+<a class="navicon" href="about.html" aria-label="About">
+  <picture>
+    <source srcset="./assets/img/nav-about.webp 1x, ./assets/img/nav-about@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-about.png" srcset="./assets/img/nav-about.png 1x, ./assets/img/nav-about@2x.png 2x" alt="About">
+  </picture>
+</a>
+<a class="navicon" href="games.html" aria-label="Current Games">
+  <picture>
+    <source srcset="./assets/img/nav-games.webp 1x, ./assets/img/nav-games@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-games.png" srcset="./assets/img/nav-games.png 1x, ./assets/img/nav-games@2x.png 2x" alt="Current Games">
+  </picture>
+</a>
+<a class="navicon" href="reviews.html" aria-label="Reviews">
+  <picture>
+    <source srcset="./assets/img/nav-reviews.webp 1x, ./assets/img/nav-reviews@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-reviews.png" srcset="./assets/img/nav-reviews.png 1x, ./assets/img/nav-reviews@2x.png 2x" alt="Reviews">
+  </picture>
+</a>
+</nav>
   </div>
 </header>
-
-<section class="hero">
-  <div class="bg" aria-hidden="true"></div>
-  <div class="overlay" aria-hidden="true"></div>
-  <div class="container hero-inner">
-    <div>
-      <h1 class="h1">Welcome to Realm Forge</h1>
-      <p class="sub">A modern gaming site by William S. — current games, quick reviews, and videos.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="games.html"><img src="./assets/svg/icon-controller.svg" alt="" style="width:18px;height:18px">Current Games</a>
-        <a class="btn" href="reviews.html"><img src="./assets/svg/icon-sword.svg" alt="" style="width:18px;height:18px">Reviews</a>
-        <a class="btn" href="videos.html"><img src="./assets/svg/icon-video.svg" alt="" style="width:18px;height:18px">Videos</a>
-      </div>
-    </div>
-    <div class="badge" data-reveal>
-      <img src="./assets/svg/icon-sword.svg" alt="">
-      <div>
-        <div class="t">By William S.</div>
-        <div class="d">Modern gamer-style: clean, fast, and made to share with friends.</div>
-      </div>
-    </div>
+<section class="splash">
+  <div class="container">
+    <picture>
+      <source srcset="./assets/img/splash.webp 1x, ./assets/img/splash@2x.webp 2x" type="image/webp">
+      <img class="splash-img" src="./assets/img/splash.png" srcset="./assets/img/splash.png 1x, ./assets/img/splash@2x.png 2x" alt="Realm Forge splash">
+    </picture>
   </div>
 </section>
 <main class="container">
-
-<div class="grid section">
-  <div class="card pad cols-8" data-reveal>
-    <div class="h2">What this site is</div>
-    <p class="p">Realm Forge is my gaming hub: what I’m playing right now, quick reviews, and videos. Built to be clean and easy to skim.</p>
-    <div class="hr"></div>
-    <div class="list">
-      <div class="mini"><img src="./assets/svg/icon-controller.svg" alt="" style="width:44px;height:44px;border-radius:12px"><div><div class="title">Current Games</div><div class="meta">My active rotation + what I’m into this week.</div></div></div>
-      <div class="mini"><img src="./assets/svg/icon-sword.svg" alt="" style="width:44px;height:44px;border-radius:12px"><div><div class="title">Reviews</div><div class="meta">Short takes: what’s great, what’s mid, what’s legendary.</div></div></div>
-      <div class="mini"><img src="./assets/svg/icon-video.svg" alt="" style="width:44px;height:44px;border-radius:12px"><div><div class="title">Videos</div><div class="meta">Highlights + clips. (Swap in your own YouTube IDs.)</div></div></div>
-    </div>
-  </div>
-  <div class="card pad cols-4" data-reveal>
-    <div class="h2">Right now</div>
-    <p class="p"><b>Top 3:</b> Roblox / Minecraft / Clash Royale</p>
-    <p class="p"><b>Next up:</b> Pokemon Legends Z-A</p>
-    <p class="p"><b>Always:</b> Mario Kart chaos with friends</p>
+  <section class="section">
+    <h2 class="h2">Featured Games</h2>
+    <div class="feature-list">
+      <div class="feature-row" data-reveal>
+  <div class="fr-media"><picture>
+  <source srcset="./assets/img/roblox.webp 1x, ./assets/img/roblox@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/roblox.png" srcset="./assets/img/roblox.png 1x, ./assets/img/roblox@2x.png 2x" alt="Roblox image">
+</picture></div>
+  <div class="fr-text">
+    <div class="fr-title">Roblox</div>
+    <div class="fr-desc">Build, explore, and hang with friends — I like discovering new experiences and making worlds with friends.</div>
   </div>
 </div>
-
-<section class="section">
-  <h2 class="h2">Featured games</h2>
-  <div class="grid">
-    <div class="card pad cols-4" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/roblox.webp" type="image/webp"><img class="thumb" src="./assets/img/roblox.png" alt="Roblox thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Roblox</div>
-          <div class="meta">Build, explore, and hang with friends.</div>
-        </div>
-      </div>
+<div class="feature-row" data-reveal>
+  <div class="fr-media"><picture>
+  <source srcset="./assets/img/minecraft.webp 1x, ./assets/img/minecraft@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/minecraft.png" srcset="./assets/img/minecraft.png 1x, ./assets/img/minecraft@2x.png 2x" alt="Minecraft image">
+</picture></div>
+  <div class="fr-text">
+    <div class="fr-title">Minecraft</div>
+    <div class="fr-desc">My creative and chill game — survival, builds, and big projects that keep getting better.</div>
+  </div>
+</div>
+<div class="feature-row" data-reveal>
+  <div class="fr-media"><picture>
+  <source srcset="./assets/img/clash.webp 1x, ./assets/img/clash@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/clash.png" srcset="./assets/img/clash.png 1x, ./assets/img/clash@2x.png 2x" alt="Clash Royale image">
+</picture></div>
+  <div class="fr-text">
+    <div class="fr-title">Clash Royale</div>
+    <div class="fr-desc">Fast strategy battles — I’m always trying new decks and learning better timing.</div>
+  </div>
+</div>
+<div class="feature-row" data-reveal>
+  <div class="fr-media"><picture>
+  <source srcset="./assets/img/fortnite.webp 1x, ./assets/img/fortnite@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/fortnite.png" srcset="./assets/img/fortnite.png 1x, ./assets/img/fortnite@2x.png 2x" alt="Fortnite image">
+</picture></div>
+  <div class="fr-text">
+    <div class="fr-title">Fortnite</div>
+    <div class="fr-desc">Squads, highlights, and new updates — best when you’re playing with friends.</div>
+  </div>
+</div>
+<div class="feature-row" data-reveal>
+  <div class="fr-media"><picture>
+  <source srcset="./assets/img/hogwarts.webp 1x, ./assets/img/hogwarts@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/hogwarts.png" srcset="./assets/img/hogwarts.png 1x, ./assets/img/hogwarts@2x.png 2x" alt="Hogwarts Legacy image">
+</picture></div>
+  <div class="fr-text">
+    <div class="fr-title">Hogwarts Legacy</div>
+    <div class="fr-desc">Exploring Hogwarts, spells, and quests — a great adventure world.</div>
+  </div>
+</div>
+<div class="feature-row" data-reveal>
+  <div class="fr-media"><picture>
+  <source srcset="./assets/img/mariokart.webp 1x, ./assets/img/mariokart@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/mariokart.png" srcset="./assets/img/mariokart.png 1x, ./assets/img/mariokart@2x.png 2x" alt="Mario Kart World image">
+</picture></div>
+  <div class="fr-text">
+    <div class="fr-title">Mario Kart World</div>
+    <div class="fr-desc">Pure racing chaos — tight drifts, funny crashes, and rematches.</div>
+  </div>
+</div>
     </div>
-    
-    <div class="card pad cols-4" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/forge.webp" type="image/webp"><img class="thumb" src="./assets/img/forge.png" alt="Forge (Roblox) thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Forge (Roblox)</div>
-          <div class="meta">My favorite Roblox experience right now.</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card pad cols-4" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/clash.webp" type="image/webp"><img class="thumb" src="./assets/img/clash.png" alt="Clash Royale thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Clash Royale</div>
-          <div class="meta">Fast strategy battles and deck experiments.</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card pad cols-4" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/minecraft.webp" type="image/webp"><img class="thumb" src="./assets/img/minecraft.png" alt="Minecraft thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Minecraft</div>
-          <div class="meta">Survival builds, redstone, and creative worlds.</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card pad cols-4" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/fortnite.webp" type="image/webp"><img class="thumb" src="./assets/img/fortnite.png" alt="Fortnite thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Fortnite</div>
-          <div class="meta">Squads, clutch moments, and new updates.</div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="card pad cols-4" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/pokemon.webp" type="image/webp"><img class="thumb" src="./assets/img/pokemon.png" alt="Pokemon Legends Z-A thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Pokemon Legends Z-A</div>
-          <div class="meta">Hyped for the next adventure.</div>
-        </div>
-      </div>
-    </div>
-    </div>
-</section>
-
+  </section>
 </main>
-
 <footer class="footer">
   <div class="container">
-    <div class="note">© Realm Forge • By William S. • Static site (no forms, no tracking).</div>
+    <div class="note">© 2026 Realm Forge • By William S.</div>
   </div>
 </footer>
-
 <script src="main.js"></script>
 </body>
 </html>

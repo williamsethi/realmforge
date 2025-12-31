@@ -9,69 +9,63 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
 <header class="topbar">
   <div class="container topbar-inner">
     <a class="brand" href="index.html" aria-label="Realm Forge home">
-      <img src="./assets/svg/logo.svg" alt="Realm Forge logo"/>
+      <picture>
+  <source srcset="./assets/img/logo.webp 1x, ./assets/img/logo@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/logo.png" srcset="./assets/img/logo.png 1x, ./assets/img/logo@2x.png 2x" alt="Realm Forge logo">
+</picture>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="games.html">Current Games</a>
-<a href="reviews.html">Reviews</a>
-<a href="videos.html">Videos</a>
-    </nav>
+      <a class="navicon" href="index.html" aria-label="Home">
+  <picture>
+    <source srcset="./assets/img/nav-home.webp 1x, ./assets/img/nav-home@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-home.png" srcset="./assets/img/nav-home.png 1x, ./assets/img/nav-home@2x.png 2x" alt="Home">
+  </picture>
+</a>
+<a class="navicon" href="about.html" aria-label="About">
+  <picture>
+    <source srcset="./assets/img/nav-about.webp 1x, ./assets/img/nav-about@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-about.png" srcset="./assets/img/nav-about.png 1x, ./assets/img/nav-about@2x.png 2x" alt="About">
+  </picture>
+</a>
+<a class="navicon" href="games.html" aria-label="Current Games">
+  <picture>
+    <source srcset="./assets/img/nav-games.webp 1x, ./assets/img/nav-games@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-games.png" srcset="./assets/img/nav-games.png 1x, ./assets/img/nav-games@2x.png 2x" alt="Current Games">
+  </picture>
+</a>
+<a class="navicon" href="reviews.html" aria-label="Reviews">
+  <picture>
+    <source srcset="./assets/img/nav-reviews.webp 1x, ./assets/img/nav-reviews@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-reviews.png" srcset="./assets/img/nav-reviews.png 1x, ./assets/img/nav-reviews@2x.png 2x" alt="Reviews">
+  </picture>
+</a>
+</nav>
   </div>
 </header>
-
-<section class="hero">
-  <div class="bg" aria-hidden="true"></div>
-  <div class="overlay" aria-hidden="true"></div>
-  <div class="container hero-inner">
-    <div>
-      <h1 class="h1">About Realm Forge</h1>
-      <p class="sub">Who I am, what I play, and why this site exists.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="games.html"><img src="./assets/svg/icon-controller.svg" alt="" style="width:18px;height:18px">Current Games</a>
-        <a class="btn" href="reviews.html"><img src="./assets/svg/icon-sword.svg" alt="" style="width:18px;height:18px">Reviews</a>
-        <a class="btn" href="videos.html"><img src="./assets/svg/icon-video.svg" alt="" style="width:18px;height:18px">Videos</a>
-      </div>
-    </div>
-    <div class="badge" data-reveal>
-      <img src="./assets/svg/icon-sword.svg" alt="">
-      <div>
-        <div class="t">By William S.</div>
-        <div class="d">Modern gamer-style: clean, fast, and made to share with friends.</div>
-      </div>
-    </div>
+<section class="splash">
+  <div class="container">
+    <picture>
+      <source srcset="./assets/img/splash.webp 1x, ./assets/img/splash@2x.webp 2x" type="image/webp">
+      <img class="splash-img" src="./assets/img/splash.png" srcset="./assets/img/splash.png 1x, ./assets/img/splash@2x.png 2x" alt="Realm Forge splash">
+    </picture>
   </div>
 </section>
 <main class="container">
-
-<section class="section">
-  <div class="grid">
-    <div class="card pad cols-8" data-reveal>
+  <section class="section">
+    <div class="card pad" data-reveal>
       <h2 class="h2">About William S.</h2>
-      <p class="p">I’m William S. I like games that have <b>skill</b>, <b>strategy</b>, and <b>fun with friends</b>. I made this site to keep my current games, reviews, and videos in one place.</p>
-      <div class="hr"></div>
-      <p class="p"><b>My vibe:</b> competitive when it’s time (Clash Royale), creative when it’s time (Minecraft), and chaos when it’s time (Mario Kart).</p>
+      <p class="p about-copy">WELCOME TO MY GAMING WORLD! I'm passionate about computer and video games! The thrill of epic adventures, clever strategies, and endless creativity keeps me coming back every day.</p><p class="p about-copy">I love teaming up with friends and family for co-op battles, funny moments, and friendly rivalries that make every session unforgettable.</p><p class="p about-copy">I am a native New Yorker. I currently game on PC, iOS, Switch 2, and Xbox. I'm also building my own games using vibe coding AI tools (Claude Opus) as well as classic hand-coding skills I'm sharpening at school.</p><p class="p about-copy">Am looking forward to learning how to turn my ideas into playable realities! Thank you for visiting Realm Forge.</p>
     </div>
-    <div class="card pad cols-4" data-reveal>
-      <h2 class="h2">Site rules</h2>
-      <p class="p"><small>No contact forms. No tracking. Just games.</small></p>
-    </div>
-  </div>
-</section>
-
+  </section>
 </main>
-
 <footer class="footer">
   <div class="container">
-    <div class="note">© Realm Forge • By William S. • Static site (no forms, no tracking).</div>
+    <div class="note">© 2026 Realm Forge • By William S.</div>
   </div>
 </footer>
-
 <script src="main.js"></script>
 </body>
 </html>

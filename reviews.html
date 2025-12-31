@@ -9,141 +9,61 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-
 <header class="topbar">
   <div class="container topbar-inner">
     <a class="brand" href="index.html" aria-label="Realm Forge home">
-      <img src="./assets/svg/logo.svg" alt="Realm Forge logo"/>
+      <picture>
+  <source srcset="./assets/img/logo.webp 1x, ./assets/img/logo@2x.webp 2x" type="image/webp">
+  <img src="./assets/img/logo.png" srcset="./assets/img/logo.png 1x, ./assets/img/logo@2x.png 2x" alt="Realm Forge logo">
+</picture>
     </a>
     <nav class="nav" aria-label="Primary navigation">
-      <a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="games.html">Current Games</a>
-<a href="reviews.html">Reviews</a>
-<a href="videos.html">Videos</a>
-    </nav>
+      <a class="navicon" href="index.html" aria-label="Home">
+  <picture>
+    <source srcset="./assets/img/nav-home.webp 1x, ./assets/img/nav-home@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-home.png" srcset="./assets/img/nav-home.png 1x, ./assets/img/nav-home@2x.png 2x" alt="Home">
+  </picture>
+</a>
+<a class="navicon" href="about.html" aria-label="About">
+  <picture>
+    <source srcset="./assets/img/nav-about.webp 1x, ./assets/img/nav-about@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-about.png" srcset="./assets/img/nav-about.png 1x, ./assets/img/nav-about@2x.png 2x" alt="About">
+  </picture>
+</a>
+<a class="navicon" href="games.html" aria-label="Current Games">
+  <picture>
+    <source srcset="./assets/img/nav-games.webp 1x, ./assets/img/nav-games@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-games.png" srcset="./assets/img/nav-games.png 1x, ./assets/img/nav-games@2x.png 2x" alt="Current Games">
+  </picture>
+</a>
+<a class="navicon" href="reviews.html" aria-label="Reviews">
+  <picture>
+    <source srcset="./assets/img/nav-reviews.webp 1x, ./assets/img/nav-reviews@2x.webp 2x" type="image/webp">
+    <img src="./assets/img/nav-reviews.png" srcset="./assets/img/nav-reviews.png 1x, ./assets/img/nav-reviews@2x.png 2x" alt="Reviews">
+  </picture>
+</a>
+</nav>
   </div>
 </header>
-
-<section class="hero">
-  <div class="bg" aria-hidden="true"></div>
-  <div class="overlay" aria-hidden="true"></div>
-  <div class="container hero-inner">
-    <div>
-      <h1 class="h1">Reviews & Ratings</h1>
-      <p class="sub">Quick ratings, no spoilers, and straight opinions.</p>
-      <div class="cta-row">
-        <a class="btn primary" href="games.html"><img src="./assets/svg/icon-controller.svg" alt="" style="width:18px;height:18px">Current Games</a>
-        <a class="btn" href="reviews.html"><img src="./assets/svg/icon-sword.svg" alt="" style="width:18px;height:18px">Reviews</a>
-        <a class="btn" href="videos.html"><img src="./assets/svg/icon-video.svg" alt="" style="width:18px;height:18px">Videos</a>
-      </div>
-    </div>
-    <div class="badge" data-reveal>
-      <img src="./assets/svg/icon-sword.svg" alt="">
-      <div>
-        <div class="t">By William S.</div>
-        <div class="d">Modern gamer-style: clean, fast, and made to share with friends.</div>
-      </div>
-    </div>
+<section class="splash">
+  <div class="container">
+    <picture>
+      <source srcset="./assets/img/splash.webp 1x, ./assets/img/splash@2x.webp 2x" type="image/webp">
+      <img class="splash-img" src="./assets/img/splash.png" srcset="./assets/img/splash.png 1x, ./assets/img/splash@2x.png 2x" alt="Realm Forge splash">
+    </picture>
   </div>
 </section>
 <main class="container">
-
-<section class="section">
-  <h2 class="h2">Reviews</h2>
-  <p class="p">Short takes. These are my current ratings — I’ll update them when patches/updates change things.</p>
-  <div class="hr"></div>
-  <div class="grid">
-    <div class="card pad cols-6" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/minecraft.webp" type="image/webp"><img class="thumb" src="./assets/img/minecraft.png" alt="Minecraft thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Minecraft</div>
-          <div class="meta">Endless creativity + relaxing but can get intense.</div>
-        </div>
-      </div>
-      <div class="rating">
-        <div class="stars" aria-label="5 out of 5 stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
-        <div class="score">9.3</div>
-      </div>
-      <div class="hr"></div>
-      <p class="p"><small>Best for: building, co-op worlds, mods.</small></p>
-    </div>
-    
-    <div class="card pad cols-6" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/clash.webp" type="image/webp"><img class="thumb" src="./assets/img/clash.png" alt="Clash Royale thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Clash Royale</div>
-          <div class="meta">Quick matches and big brain deck decisions.</div>
-        </div>
-      </div>
-      <div class="rating">
-        <div class="stars" aria-label="4 out of 5 stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
-        <div class="score">8.6</div>
-      </div>
-      <div class="hr"></div>
-      <p class="p"><small>Best for: short sessions, strategy.</small></p>
-    </div>
-    
-    <div class="card pad cols-6" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/fortnite.webp" type="image/webp"><img class="thumb" src="./assets/img/fortnite.png" alt="Fortnite thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Fortnite</div>
-          <div class="meta">Always changing, lots of modes, great with friends.</div>
-        </div>
-      </div>
-      <div class="rating">
-        <div class="stars" aria-label="4 out of 5 stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
-        <div class="score">8.4</div>
-      </div>
-      <div class="hr"></div>
-      <p class="p"><small>Best for: squads, events, highlights.</small></p>
-    </div>
-    
-    <div class="card pad cols-6" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/hogwarts.webp" type="image/webp"><img class="thumb" src="./assets/img/hogwarts.png" alt="Hogwarts Legacy thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Hogwarts Legacy</div>
-          <div class="meta">Beautiful world and fun combat.</div>
-        </div>
-      </div>
-      <div class="rating">
-        <div class="stars" aria-label="4 out of 5 stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
-        <div class="score">8.9</div>
-      </div>
-      <div class="hr"></div>
-      <p class="p"><small>Best for: exploration, story quests.</small></p>
-    </div>
-    
-    <div class="card pad cols-6" data-reveal>
-      <div class="mini">
-        <picture><source srcset="./assets/img/smash.webp" type="image/webp"><img class="thumb" src="./assets/img/smash.png" alt="Super Smash Bros thumbnail" loading="lazy" decoding="async"></picture>
-        <div>
-          <div class="title">Super Smash Bros</div>
-          <div class="meta">The best party-fighting game with friends.</div>
-        </div>
-      </div>
-      <div class="rating">
-        <div class="stars" aria-label="4 out of 5 stars"><span class="star"></span><span class="star"></span><span class="star"></span><span class="star"></span></div>
-        <div class="score">9.0</div>
-      </div>
-      <div class="hr"></div>
-      <p class="p"><small>Best for: couch multiplayer.</small></p>
-    </div>
-    </div>
-</section>
-
+  <section class="section">
+    <h2 class="h2">Reviews</h2>
+    <p class="p">Coming soon.</p>
+  </section>
 </main>
-
 <footer class="footer">
   <div class="container">
-    <div class="note">© Realm Forge • By William S. • Static site (no forms, no tracking).</div>
+    <div class="note">© 2026 Realm Forge • By William S.</div>
   </div>
 </footer>
-
 <script src="main.js"></script>
 </body>
 </html>
