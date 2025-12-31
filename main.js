@@ -1,11 +1,8 @@
-// Small niceties only: active nav + subtle reveal animations.
 (function(){
   const path = location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll(".nav a").forEach(a=>{
-    const href = a.getAttribute("href");
-    if(href === path) a.classList.add("active");
+    if(a.getAttribute("href") === path) a.classList.add("active");
   });
-
   const els = document.querySelectorAll("[data-reveal]");
   const obs = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{

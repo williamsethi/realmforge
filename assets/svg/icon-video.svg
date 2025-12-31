@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-label="video icon">
   <rect x="10" y="10" width="140" height="140" rx="28" fill="#0b1a33"/>
   <rect x="34" y="50" width="92" height="64" rx="12" fill="#ffffff" opacity="0.9"/>
-  <path d="M78 68 L98 82 L78 96 Z" fill="#dc2626"/>
+  <path d="M78 68 L98 82 L78 96 Z" fill="#b91c1c"/>
   <rect x="34" y="44" width="92" height="8" rx="4" fill="#9dd7ff" opacity="0.9"/>
 </svg>

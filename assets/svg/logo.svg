@@ -9,8 +9,6 @@
       <feDropShadow dx="0" dy="4" stdDeviation="5" flood-color="#000" flood-opacity="0.35"/>
     </filter>
   </defs>
-
-  <!-- emblem -->
   <g filter="url(#s)">
     <path d="M68 20 L118 48 L118 102 L68 126 L18 102 L18 48 Z" fill="#0b1a33" stroke="url(#g)" stroke-width="4"/>
     <path d="M68 40 C86 54, 86 76, 68 92 C50 76, 50 54, 68 40 Z" fill="#f7d774" opacity="0.95"/>
@@ -18,17 +16,9 @@
     <rect x="64" y="64" width="8" height="44" rx="3" fill="#9dd7ff" opacity="0.95"/>
     <path d="M48 104 L88 104 L84 116 L52 116 Z" fill="#0f2a5c" opacity="0.95"/>
   </g>
-
-  <!-- wordmark -->
   <g filter="url(#s)">
-    <text x="150" y="72" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="56" font-weight="900" fill="#ffffff" letter-spacing="1">
-      REALM
-    </text>
-    <text x="340" y="72" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="56" font-weight="900" fill="url(#g)" letter-spacing="1">
-      FORGE
-    </text>
-    <text x="152" y="106" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" font-weight="700" fill="#9dd7ff" opacity="0.95">
-      Gaming with William S.
-    </text>
+    <text x="150" y="72" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="56" font-weight="900" fill="#ffffff" letter-spacing="1">REALM</text>
+    <text x="340" y="72" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="56" font-weight="900" fill="url(#g)" letter-spacing="1">FORGE</text>
+    <text x="152" y="106" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-size="18" font-weight="700" fill="#9dd7ff" opacity="0.95">Gaming with William S.</text>
   </g>
 </svg>

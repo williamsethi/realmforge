@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Impact Burst">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.95"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.12"/>
+    </linearGradient>
+    <radialGradient id="r" cx="70%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#f97316" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#f97316" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="18" stdDeviation="16" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+  <rect width="960" height="540" rx="36" fill="#0b1a33"/>
+  <rect width="960" height="540" rx="36" fill="url(#r)"/>
+
+  <g opacity="0.14" stroke="#ffffff">
+    <path d="M0 60 H960" /><path d="M0 120 H960" /><path d="M0 180 H960" /><path d="M0 240 H960" /><path d="M0 300 H960" /><path d="M0 360 H960" /><path d="M0 420 H960" /><path d="M0 480 H960" />
+    <path d="M80 0 V540" /><path d="M160 0 V540" /><path d="M240 0 V540" /><path d="M320 0 V540" /><path d="M400 0 V540" /><path d="M480 0 V540" /><path d="M560 0 V540" /><path d="M640 0 V540" /><path d="M720 0 V540" /><path d="M800 0 V540" /><path d="M880 0 V540" />
+  </g>
+
+  <g filter="url(#s)">
+    <path d="M120 390 C220 260, 320 310, 420 210 C520 110, 620 160, 820 70 L860 120 C680 240, 560 260, 470 330 C350 420, 240 430, 150 410 Z"
+          fill="url(#g)" opacity="0.9"/>
+    <circle cx="760" cy="140" r="70" fill="#f97316" opacity="0.22"/>
+    <circle cx="790" cy="165" r="35" fill="#ffffff" opacity="0.12"/>
+    <path d="M150 430 L280 330 L360 380 L480 290 L610 370 L760 250 L860 305 L860 480 L150 480 Z"
+          fill="#ffffff" opacity="0.08"/>
+  </g>
+
+  <text x="54" y="86" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="900"
+        font-size="28" fill="#ffffff" opacity="0.85">Impact Burst</text>
+</svg>
