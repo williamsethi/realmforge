@@ -1,11 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="Voxel Hills">
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="540" viewBox="0 0 960 540" role="img" aria-label="minecraft thumbnail">
   <defs>
     <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
       <stop offset="0" stop-color="#22c55e" stop-opacity="0.95"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.10"/>
     </linearGradient>
-    <radialGradient id="r" cx="70%" cy="30%" r="70%">
-      <stop offset="0" stop-color="#22c55e" stop-opacity="0.35"/>
+    <radialGradient id="r" cx="70%" cy="25%" r="70%">
+      <stop offset="0" stop-color="#22c55e" stop-opacity="0.32"/>
       <stop offset="1" stop-color="#22c55e" stop-opacity="0"/>
     </radialGradient>
     <filter id="s" x="-20%" y="-20%" width="140%" height="140%">
@@ -14,21 +14,23 @@
   </defs>
   <rect width="960" height="540" rx="36" fill="#0b1a33"/>
   <rect width="960" height="540" rx="36" fill="url(#r)"/>
-
-  <g opacity="0.14" stroke="#ffffff">
+  <!-- subtle grid -->
+  <g opacity="0.12" stroke="#ffffff">
     <path d="M0 60 H960" /><path d="M0 120 H960" /><path d="M0 180 H960" /><path d="M0 240 H960" /><path d="M0 300 H960" /><path d="M0 360 H960" /><path d="M0 420 H960" /><path d="M0 480 H960" />
     <path d="M80 0 V540" /><path d="M160 0 V540" /><path d="M240 0 V540" /><path d="M320 0 V540" /><path d="M400 0 V540" /><path d="M480 0 V540" /><path d="M560 0 V540" /><path d="M640 0 V540" /><path d="M720 0 V540" /><path d="M800 0 V540" /><path d="M880 0 V540" />
   </g>
-
-  <g filter="url(#s)">
-    <path d="M120 390 C220 260, 320 310, 420 210 C520 110, 620 160, 820 70 L860 120 C680 240, 560 260, 470 330 C350 420, 240 430, 150 410 Z"
-          fill="url(#g)" opacity="0.9"/>
-    <circle cx="760" cy="140" r="70" fill="#22c55e" opacity="0.22"/>
-    <circle cx="790" cy="165" r="35" fill="#ffffff" opacity="0.12"/>
-    <path d="M150 430 L280 330 L360 380 L480 290 L610 370 L760 250 L860 305 L860 480 L150 480 Z"
-          fill="#ffffff" opacity="0.08"/>
-  </g>
-
-  <text x="54" y="86" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial" font-weight="900"
-        font-size="28" fill="#ffffff" opacity="0.85">Voxel Hills</text>
+  
+        <g filter="url(#s)">
+          <path d="M120 360 L240 250 L360 320 L470 210 L610 335 L740 190 L840 250 L840 420 L120 420 Z" fill="url(#g)" opacity="0.85"/>
+          <g fill="#ffffff" opacity="0.10">
+            <rect x="190" y="285" width="40" height="40"/><rect x="235" y="285" width="40" height="40"/>
+            <rect x="190" y="330" width="40" height="40"/><rect x="235" y="330" width="40" height="40"/>
+          </g>
+          <g transform="translate(700 150) rotate(-20)">
+            <rect x="-18" y="-18" width="110" height="110" rx="18" fill="url(#g)"/>
+            <path d="M14 55 L80 55" stroke="#ffffff" stroke-width="12" opacity="0.18" stroke-linecap="round"/>
+            <path d="M47 22 L47 88" stroke="#ffffff" stroke-width="12" opacity="0.18" stroke-linecap="round"/>
+          </g>
+        </g>
+        
 </svg>

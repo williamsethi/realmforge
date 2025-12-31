@@ -62,6 +62,9 @@ a:hover{opacity:.92}
 .card.pad{padding:16px}
 .card:hover{border-color:rgba(157,215,255,.25)}
 .mini{display:flex;gap:12px;align-items:center}
+.mini picture{flex:0 0 auto}
+.mini picture, .mini picture img{display:block}
+
 .mini img.thumb{width:120px;height:68px;border-radius:14px;object-fit:cover;border:1px solid rgba(255,255,255,.12)}
 .mini img.icon{width:44px;height:44px;border-radius:12px}
 .mini .title{font-weight:900}
