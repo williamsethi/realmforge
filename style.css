@@ -423,3 +423,10 @@ img{ max-width:100%; height:auto; display:block; }
   .game-list-large .game-media{ flex: 0 0 auto; }
 }
 /* ===== END HERO + GAME ROW LAYOUT ===== */
+
+
+
+/* ===== HOME FEATURED TEXT SIZE (requested 100% larger) ===== */
+.featured .game-title{ font-size: 2rem; line-height: 1.15; }
+.featured .game-desc{ font-size: 2rem; line-height: 1.25; }
+/* ===== END HOME FEATURED TEXT SIZE ===== */
