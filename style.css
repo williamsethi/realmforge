@@ -430,3 +430,24 @@ img{ max-width:100%; height:auto; display:block; }
 .featured .game-title{ font-size: 2rem; line-height: 1.15; }
 .featured .game-desc{ font-size: 2rem; line-height: 1.25; }
 /* ===== END HOME FEATURED TEXT SIZE ===== */
+
+
+
+/* ===== HOME FEATURED LAYOUT FIX (75/25 desktop) ===== */
+@media (min-width: 521px){
+  .featured .game-list-large{ max-width: 1200px; margin: 0 auto; }
+  .featured .game-list-large .game-card{
+    display:flex;
+    align-items:stretch;
+    gap:18px;
+  }
+  .featured .game-list-large .game-media{
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .featured .game-list-large .game-content{
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+/* ===== END HOME FEATURED LAYOUT FIX ===== */
