@@ -381,7 +381,8 @@ img{ max-width:100%; height:auto; display:block; }
 
 
 
-/* ===== STATIC HERO + LARGE GAME ROWS ===== */
+/* ===== HERO + GAME ROW LAYOUT (RESTORED) ===== */
+.hero{ padding: 22px 0 10px; }
 .hero-image{
   width:100%;
   height:auto;
@@ -389,18 +390,19 @@ img{ max-width:100%; height:auto; display:block; }
   border-radius:22px;
 }
 
-/* Large game rows: image ~75% page width with text on right */
-.game-list-large .game-card,
-.game-list-large .game-item{
+.intro{ padding: 10px 0 14px; }
+.intro h1{ margin: 0 0 8px; }
+.intro p{ margin: 0; }
+
+.game-list-large .game-row{
   display:flex;
   gap:18px;
   align-items:stretch;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 
-.game-list-large .game-media{
-  flex: 0 0 72%;
-}
-
+.game-list-large .game-media{ flex: 0 0 72%; }
 .game-list-large .game-media img{
   width:100%;
   height:auto;
@@ -408,16 +410,16 @@ img{ max-width:100%; height:auto; display:block; }
   border-radius:18px;
 }
 
-.game-list-large .game-content{
-  flex:1 1 auto;
-}
+.game-list-large .game-content{ flex: 1 1 auto; }
+.game-title{ margin: 0 0 8px; }
+.game-title a{ text-decoration: none; }
+.game-desc{ margin: 0; opacity: 0.92; }
+
+.note-big{ font-size: 1.15rem; opacity: 0.95; }
 
 /* Mobile: stack image above text */
 @media (max-width: 520px){
-  .game-list-large .game-card,
-  .game-list-large .game-item{
-    flex-direction:column;
-  }
+  .game-list-large .game-row{ flex-direction:column; }
   .game-list-large .game-media{ flex: 0 0 auto; }
 }
-/* ===== END STATIC HERO + LARGE GAME ROWS ===== */
+/* ===== END HERO + GAME ROW LAYOUT ===== */
