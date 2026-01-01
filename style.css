@@ -362,3 +362,19 @@ img{ max-width:100%; height:auto; display:block; }
   }
 }
 /* ===== END HEADER OVERRIDES ===== */
+
+
+
+/* ===== MOBILE NAV ICON ASPECT FIX ===== */
+@media (max-width: 520px){
+  .nav{ align-items:flex-start !important; }
+  .navbtn{ overflow:visible !important; }
+  .navbtn img{
+    width:100% !important;
+    height:auto !important;
+    max-height:none !important;
+    min-height:0 !important;
+    object-fit:contain !important;
+  }
+}
+/* ===== END MOBILE NAV ICON ASPECT FIX ===== */
