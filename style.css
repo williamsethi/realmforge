@@ -277,3 +277,88 @@ img{ max-width:100%; height:auto; display:block; }
   .hero-video{ display:none; }
   .hero-fallback{ position:relative; opacity:1; }
 }
+
+
+
+/* ===== HEADER OVERRIDES (requested sizing) ===== */
+.topbar-inner{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:space-between !important;
+  gap:16px !important;
+}
+
+.brand{
+  display:block !important;
+  flex: 0 0 auto !important;
+}
+
+.brand-img{
+  display:block !important;
+  width: 42vw !important;          /* make logo big on desktop */
+  max-width: 680px !important;
+  min-width: 420px !important;
+  height: auto !important;
+  flex-shrink: 0 !important;
+  border-radius: 0 !important;     /* keep rectangular */
+}
+
+/* Desktop nav buttons: twice as large, no gaps, keep rectangles */
+.nav{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-end !important;
+  gap:0 !important;
+  flex-wrap:nowrap !important;
+  flex: 1 1 auto !important;
+}
+
+.navbtn{
+  flex: 0 0 auto !important;
+  width: 170px !important;         /* big buttons */
+  max-width: 180px !important;
+  margin:0 !important;
+  padding:0 !important;
+  border-radius:0 !important;
+  overflow:hidden !important;
+}
+
+.navbtn img{
+  width:100% !important;
+  height:auto !important;          /* preserves rectangle */
+  display:block !important;
+  border-radius:0 !important;
+}
+
+/* Mobile: logo takes ~95% width; icons 4 across with no gaps */
+@media (max-width: 520px){
+  .topbar-inner{
+    flex-direction:column !important;
+    align-items:flex-start !important;
+    gap:10px !important;
+  }
+
+  .brand-img{
+    width:95vw !important;
+    max-width: 95vw !important;
+    min-width: 0 !important;
+  }
+
+  .nav{
+    width:95vw !important;
+    justify-content:space-between !important;
+    gap:0 !important;
+  }
+
+  .navbtn{
+    width: calc(95vw / 4) !important;
+    max-width: none !important;
+    flex: 0 0 auto !important;
+  }
+
+  .navbtn img{
+    width:100% !important;
+    height:auto !important;
+  }
+}
+/* ===== END HEADER OVERRIDES ===== */
