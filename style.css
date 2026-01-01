@@ -378,3 +378,46 @@ img{ max-width:100%; height:auto; display:block; }
   }
 }
 /* ===== END MOBILE NAV ICON ASPECT FIX ===== */
+
+
+
+/* ===== STATIC HERO + LARGE GAME ROWS ===== */
+.hero-image{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:22px;
+}
+
+/* Large game rows: image ~75% page width with text on right */
+.game-list-large .game-card,
+.game-list-large .game-item{
+  display:flex;
+  gap:18px;
+  align-items:stretch;
+}
+
+.game-list-large .game-media{
+  flex: 0 0 72%;
+}
+
+.game-list-large .game-media img{
+  width:100%;
+  height:auto;
+  display:block;
+  border-radius:18px;
+}
+
+.game-list-large .game-content{
+  flex:1 1 auto;
+}
+
+/* Mobile: stack image above text */
+@media (max-width: 520px){
+  .game-list-large .game-card,
+  .game-list-large .game-item{
+    flex-direction:column;
+  }
+  .game-list-large .game-media{ flex: 0 0 auto; }
+}
+/* ===== END STATIC HERO + LARGE GAME ROWS ===== */
