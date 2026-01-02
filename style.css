@@ -487,3 +487,14 @@ main{
   }
 }
 /* ===== END GLOBAL ALIGNMENT ===== */
+
+
+.rank{font-weight:800; margin-right:0.25rem;}
+
+/* Text size equalization */
+:root{--rf-main-text:2.2rem;}
+.intro p{font-size:var(--rf-main-text);}
+.section-title{font-size:var(--rf-main-text);}
+.game-title, .game-desc{font-size:var(--rf-main-text);} 
+.content-card p{font-size:var(--rf-main-text);} 
+.content-card h2{font-size:var(--rf-main-text);} 
