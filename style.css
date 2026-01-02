@@ -491,18 +491,28 @@ main{
 
 .rank{font-weight:800; margin-right:0.25rem;}
 
-/* Text size equalization (match Home "Welcome to Realm Forge" size) */
-:root{--rf-main-text:clamp(34px, 4vw, 52px);} /* same as .h1 */
+/* Unified content sizing:
+   Keep the HERO H1 large, but make the rest of the visible copy (section titles,
+   paragraphs, game titles/descriptions) match the same "Welcome to Realm Forge"
+   body-section scale.
+*/
+:root{
+  --rf-uniform-text: clamp(18px, 2.2vw, 22px);
+}
 
-/* Make most visible text blocks match the H1 scale (per user request) */
-.h1, .h2, .h3,
+/* Do NOT touch the hero H1 size */
+.h2,
 .intro p,
 .section-title,
 .game-title, .game-desc, .game-subnote,
 .content-card p, .content-card h2,
 .note, .footer .note,
 .mini .meta, .badge .d,
-.p, .sub{
-  font-size:var(--rf-main-text) !important;
-  line-height:1.15;
+.p, .sub,
+.fr-title, .fr-desc{
+  font-size: var(--rf-uniform-text) !important;
+  line-height: 1.25;
 }
+
+/* Make ranking numbers clearly visible */
+.rank{font-size: clamp(22px, 3vw, 30px);}
