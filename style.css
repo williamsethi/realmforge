@@ -451,3 +451,39 @@ img{ max-width:100%; height:auto; display:block; }
   }
 }
 /* ===== END HOME FEATURED LAYOUT FIX ===== */
+
+
+
+/* ===== GLOBAL ALIGNMENT (consistent left edge) ===== */
+:root{
+  --page-max: 1200px;
+  --page-pad: 18px;
+}
+.site-header{ width:100%; }
+.topbar-inner,
+main{
+  max-width: var(--page-max);
+  margin-left:auto;
+  margin-right:auto;
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
+  box-sizing:border-box;
+}
+.topbar-inner{ justify-content: space-between !important; }
+
+/* Make sure sections don't introduce extra horizontal offset */
+.hero-media,
+.intro,
+.featured{ margin-left:0 !important; margin-right:0 !important; }
+
+/* Keep featured area constrained */
+.featured .game-list-large{ width:100%; max-width: var(--page-max); margin:0; }
+
+@media (max-width: 520px){
+  :root{ --page-pad: 14px; }
+  .topbar-inner, main{
+    padding-left: var(--page-pad);
+    padding-right: var(--page-pad);
+  }
+}
+/* ===== END GLOBAL ALIGNMENT ===== */
