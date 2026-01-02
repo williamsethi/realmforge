@@ -491,10 +491,18 @@ main{
 
 .rank{font-weight:800; margin-right:0.25rem;}
 
-/* Text size equalization */
-:root{--rf-main-text:2.2rem;}
-.intro p{font-size:var(--rf-main-text);}
-.section-title{font-size:var(--rf-main-text);}
-.game-title, .game-desc{font-size:var(--rf-main-text);} 
-.content-card p{font-size:var(--rf-main-text);} 
-.content-card h2{font-size:var(--rf-main-text);} 
+/* Text size equalization (match Home "Welcome to Realm Forge" size) */
+:root{--rf-main-text:clamp(34px, 4vw, 52px);} /* same as .h1 */
+
+/* Make most visible text blocks match the H1 scale (per user request) */
+.h1, .h2, .h3,
+.intro p,
+.section-title,
+.game-title, .game-desc, .game-subnote,
+.content-card p, .content-card h2,
+.note, .footer .note,
+.mini .meta, .badge .d,
+.p, .sub{
+  font-size:var(--rf-main-text) !important;
+  line-height:1.15;
+}
