@@ -527,3 +527,27 @@ main{
   letter-spacing: 0.02em;
 }
 /* ===== END TOP 10 RANK NUMBER SIZE ===== */
+
+
+
+/* ===== HOME HERO VIDEOS ===== */
+.hero-video-grid{
+  display:flex;
+  gap:14px;
+  align-items:flex-start;
+}
+.hero-video-grid video{
+  width:50%;
+  height:auto;
+  border-radius:14px;
+  background:#000;
+}
+.play-both-btn{
+  margin-top:12px;
+}
+/* Mobile: stack videos */
+@media (max-width: 520px){
+  .hero-video-grid{ flex-direction: column; }
+  .hero-video-grid video{ width:100%; }
+}
+/* ===== END HOME HERO VIDEOS ===== */

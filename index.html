@@ -23,11 +23,17 @@
   </div>
 </header>
 <main>
-  <section class="hero">
-    <div class="container">
-      <img class="hero-image" src="./assets/img/splash.jpg" alt="Realm Forge splash" loading="eager" decoding="async">
-    </div>
-  </section>
+  <section class="hero hero-video">
+  <div class="hero-video-grid">
+    <video id="rfVidLeft" playsinline controls preload="metadata">
+      <source src="./assets/video/rfanimation2.mp4" type="video/mp4">
+    </video>
+    <video id="rfVidRight" playsinline controls preload="metadata">
+      <source src="./assets/video/rfanimation.mp4" type="video/mp4">
+    </video>
+  </div>
+  <button id="rfPlayBoth" class="play-both-btn" type="button">Play both with sound</button>
+</section>
 
   <section class="intro">
     <div class="container">
