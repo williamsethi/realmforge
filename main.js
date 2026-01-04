@@ -43,3 +43,27 @@
   });
 })();
 // ===== END HOME HERO VIDEO SEQUENCE =====
+
+
+
+// ===== v34 desktop autoplay (muted) =====
+document.addEventListener("DOMContentLoaded", () => {
+  const left = document.getElementById("rfVidLeft");
+  const right = document.getElementById("rfVidRight");
+  if (!left || !right) return;
+
+  const isDesktop = window.matchMedia && window.matchMedia("(min-width: 521px)").matches;
+  if (isDesktop) {
+    // Autoplay is generally only allowed when muted.
+    [left, right].forEach(v => {
+      v.muted = true;
+      v.autoplay = true;
+      v.loop = true;
+      v.playsInline = true;
+      v.preload = "metadata";
+    });
+    left.play().catch(() => {});
+    right.play().catch(() => {});
+  }
+});
+// ===== END v34 desktop autoplay =====

@@ -551,3 +551,33 @@ main{
   .hero-video-grid video{ width:100%; }
 }
 /* ===== END HOME HERO VIDEOS ===== */
+
+
+
+/* ===== v34 HERO VIDEO LAYOUT ===== */
+.hero-video-grid{
+  display: grid;
+  grid-template-columns: 1fr; /* mobile stacked */
+  gap: 14px;
+  align-items: start;
+}
+.hero-video-grid video{
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  background: #000;
+}
+
+/* Same visual size on desktop: enforce consistent frame */
+@media (min-width: 521px){
+  .hero-video-grid{
+    grid-template-columns: 1fr 1fr; /* desktop side-by-side */
+  }
+  .hero-video-grid video{
+    aspect-ratio: 9 / 16;
+    object-fit: cover;
+  }
+  /* Remove the "Play both with sound" UI on desktop */
+  .play-both-btn{ display: none !important; }
+}
+/* ===== END v34 HERO VIDEO LAYOUT ===== */
